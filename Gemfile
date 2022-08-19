@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.2"
 
+# Cloudinary image database
+gem "cloudinary"
+
 # Dotenv for key security
 gem "dotenv-rails", groups: [:development, :test]
 
