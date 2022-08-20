@@ -4,6 +4,10 @@
 <%# show the inividual list details %>
 <%= link_to "Back to lists", lists_path %>
 <%= link_to "Add movie to list", new_list_bookmark_path(@list) %>
+<%= link_to "Delete this list",
+  list_path(@list),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
 <% @list.bookmarks.each do |bookmark| %>
 <li>
   <span>

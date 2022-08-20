@@ -1,2 +1,23 @@
 // Import page-specific CSS files here.
 @import "home";
+@import "../components/card";
+
+.cards-container {
+display: flex;
+flex-wrap: wrap;
+width: 100%;
+justify-content: center;
+}
+
+.hero {
+  height: 50vh;
+  background-color: aquamarine;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  h1, p {
+    margin: 20px;
+  }
+}
